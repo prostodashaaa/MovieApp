@@ -28,7 +28,7 @@
 }
 
 .input-field__wrapper::before {
-  content: url('/public/Search.svg');
+  content: url('/MovieApp/Search.svg');
   max-height: 24px;
 }
 

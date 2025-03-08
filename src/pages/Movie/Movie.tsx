@@ -65,7 +65,7 @@ export function Movie() {
         <div className={classNames(styles.movie__description)}>
           <div className={classNames(styles.movie__image)}>
             <img
-              src={movie.image ? movie.image : "/public/NoPictures.svg"}
+              src={movie.image ? movie.image : "/MovieApp/NoPictures.svg"}
               alt="Обложка фильма"
             />
           </div>
@@ -79,7 +79,7 @@ export function Movie() {
               {movie.aggregateRating && (
                 <div className={classNames(styles.movie__rating)}>
                   <div className={classNames(styles.rating_image)}>
-                    <img src="/public/Star.svg" alt="Рейтинг" />
+                    <img src="/MovieApp/Star.svg" alt="Рейтинг" />
                   </div>
                   <div className={classNames(styles.rating_text)}>
                     {movie.aggregateRating.ratingValue}
@@ -88,12 +88,12 @@ export function Movie() {
               )}
               {!isFavourite ? (
                 <Button appearence="favourite" onClick={editFavourites}>
-                  <img src="/public/Like.svg" alt="Добавить в избранное" />В
+                  <img src="/MovieApp/Like.svg" alt="Добавить в избранное" />В
                   избранное
                 </Button>
               ) : (
                 <Button appearence="done-favourite" onClick={editFavourites}>
-                  <img src="/public/Favourites.svg" alt="В избранном" />В
+                  <img src="/MovieApp/Favourites.svg" alt="В избранном" />В
                   избранном
                 </Button>
               )}

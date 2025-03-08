@@ -37,13 +37,13 @@ function MovieItem(params: ICardMovie) {
           src={
             params["#IMG_POSTER"]
               ? params["#IMG_POSTER"]
-              : "/public/NoPictures.svg"
+              : "/MovieApp/NoPictures.svg"
           }
           alt="Постер"
         />
         <div className={classNames(styles["movie-item__rating"])}>
           <div className={classNames(styles["movie-item__rating_image"])}>
-            <img src="/public/Star.svg" alt="Рейтинг" />
+            <img src="/MovieApp/Star.svg" alt="Рейтинг" />
           </div>
           <div className={classNames(styles["movie-item__rating_count"])}>
             {params["#RANK"]}
@@ -56,11 +56,11 @@ function MovieItem(params: ICardMovie) {
         </div>
         {!isFavourite ? (
           <Button appearence="favourite" onClick={editFavourites}>
-            <img src="/public/Like.svg" alt="Добавить в избранное" />В избранное
+            <img src="/MovieApp/Like.svg" alt="Добавить в избранное" />В избранное
           </Button>
         ) : (
           <Button appearence="done-favourite" onClick={editFavourites}>
-            <img src="/public/Favourites.svg" alt="В избранном" />В избранном
+            <img src="/MovieApp/Favourites.svg" alt="В избранном" />В избранном
           </Button>
         )}
       </div>

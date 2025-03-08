@@ -20,7 +20,7 @@ function Header() {
   return (
     <div className={classNames(styles.header)}>
       <NavLink className={classNames(styles["favourites-a"])} to={"/favorites"}>
-        <img src="/public/Favourites.svg" alt="Избранное" />
+        <img src="/MovieApp/Favourites.svg" alt="Избранное" />
       </NavLink>
       <ul className={classNames(styles.header__nav)}>
         <li className={classNames(styles["header__nav-item"])}>
@@ -68,7 +68,7 @@ function Header() {
               >
                 {loggedInUser.name}
                 <img
-                  src="/public/UserRounded.svg"
+                  src="/MovieApp/UserRounded.svg"
                   alt="Личный кабинет"
                   className={classNames(styles["header__nav-item-image"])}
                 />
@@ -106,7 +106,7 @@ function Header() {
             >
               Войти
               <img
-                src="/public/Login.svg"
+                src="/MovieApp/Login.svg"
                 alt="Войти"
                 className={classNames(styles["header__nav-item-image"])}
               />
