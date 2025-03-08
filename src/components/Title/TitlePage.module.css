@@ -1,0 +1,23 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title__h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 80px;
+}
+
+.title__text {
+  color: var(--grey);
+
+  width: 40%;
+}
+
+@media (max-width: 600px) {
+  .title__text {
+    width: 100%;
+  }
+}

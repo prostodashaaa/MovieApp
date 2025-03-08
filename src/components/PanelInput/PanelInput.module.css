@@ -1,0 +1,18 @@
+.top-panel__search {
+  display: flex;
+  gap: 8px;
+}
+
+.top-panel__login {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+
+  padding-top: 27px;
+}
+
+@media (max-width: 600px) {
+  .top-panel__search {
+    flex-direction: column;
+  }
+}
