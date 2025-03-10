@@ -7,7 +7,7 @@ import he from "he";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../../store/store";
 import { userActions } from "../../store/user.slice";
-import { MouseEvent } from "react";
+import { MouseEvent, useEffect } from "react";
 
 export function Movie() {
   const data = useLoaderData();
@@ -50,6 +50,10 @@ export function Movie() {
     const minuts = Number(duration.slice(haveHour + 1, haveMinuts));
     return `${hour * 60 + minuts} мин`;
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

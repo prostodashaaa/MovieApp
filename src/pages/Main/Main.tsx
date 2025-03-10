@@ -1,4 +1,4 @@
-import { ChangeEvent, KeyboardEvent, useRef } from "react";
+import { ChangeEvent, KeyboardEvent, useEffect, useRef } from "react";
 import Button from "../../components/Button/Button";
 import CardButton from "../../components/CardButton/CardButton";
 import Input from "../../components/Input/Input";
@@ -84,7 +84,7 @@ export function Main() {
               </CardButton>
             ))
           ))}
-        {isLoading && <Loader/>}
+        {isLoading && <Loader />}
         {error && <>{error}</>}
       </div>
     </>
